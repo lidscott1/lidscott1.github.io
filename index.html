@@ -71,11 +71,22 @@
 
             <img  src="https://opentextbc.ca/introbusinessstatopenstax/wp-content/ql-cache/quicklatex.com-d0eb04f32ae5a5173b85e0b04ba3ecc6_l3.svg" class="ql-img-inline-formula quicklatex-auto-format" alt="{\sigma }_{\mathrm{p\text{'}}}=\sqrt{\frac{p\left(1-p\right)}{n}}×\sqrt{\frac{N-n}{N-1}}" title="Rendered by QuickLaTeX.com" height="35" width="164" style="display: block margin-left: auto margin-right: auto width: 50%;">
 
-</br>
+<br>
 
                 <p>
  In this term one can see that we are correcting for the fact that we know the population size.  Therefore as the number of people tested gets closer to the population we have more certainty.
  </p>
+
+        <br>
+
+            <h2 class="text-center">A scoring function </h2>
+
+        <p>As an initial first pass we have written up a scoring function that accounts for a number of different factors
+        these factors include 1. percent of positive cases 2. underlying uncertainty 3. population size and 4. the number of testing sites in a
+            zip code(though proximity was determined strictly by location IN a zip code, adjacency is not taken in to account).
+            These scores are normalized to be ranked from 0 to 1 with 1 indicating a higher need than a 0.
+        </p>
+
 
 
         </div>
@@ -84,16 +95,17 @@
 
 </body>
 
-<h2 class="text-center">Interval Widths Map</h2>
+<br>
 
 <div class="row">
     <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 1000px;">
-    <iframe class="embed-responsive-item" style="max-width:1000px; max-height:563px;" src="interval_width.html"></iframe>
+    <iframe class="embed-responsive-item" style="max-width:1000px; max-height:563px;" src="scores.html"></iframe>
     </div>
 </div>
-<h2 class="text-center">Upper Limits Maps</h2>
-<div class="row">
-    <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 1000px;">
-    <iframe class="embed-responsive-item" style="max-width:1000px; max-height:563px;" src="upper_limit.html"></iframe>
-    </div>
-</div>
+
+<!--<h2 class="text-center">Upper Limits Maps</h2>-->
+<!--<div class="row">-->
+<!--    <div class="embed-responsive embed-responsive-16by9 center-block" style="max-width: 1000px;">-->
+<!--    <iframe class="embed-responsive-item" style="max-width:1000px; max-height:563px;" src="upper_limit.html"></iframe>-->
+<!--    </div>-->
+<!--</div>-->
